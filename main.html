@@ -18,9 +18,13 @@
     <p></p>
     <ul class="plates">
       <li>Loading Tapas...</li>
+      <!-- <li>
+        <input type="checkbox" data-index=${i} id="item${i}" ${plate.done ? 'checked' : ''} />
+        <label for="item${i}">plate text</label>
+      </li> -->
     </ul>
     <form class="add-items">
-      <input type="text" name="item" placeholder="Item Name" required>
+      <input type="text" name="item" placeholder="Item Name" id ="Item" required>
       <input type="submit" value="+ Add Item">
     </form>
   </div>
@@ -29,7 +33,8 @@
   const addItems = document.querySelector('.add-items');
   const itemsList = document.querySelector('.plates');
   const items = [];
-
+  // let itemsinput = document.getElementById('Item')
+  // console.log(itemsinput.value);
 </script>
 
 
